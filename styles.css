@@ -63,7 +63,7 @@ img {
 }
 
 .btn {
-  padding: 0.75rem 4rem 0.75rem 4rem;
+  padding: 1rem 4rem 1rem 4rem;
   border-radius: 1.5rem;
   border: none;
   color: var(--violet);
@@ -126,7 +126,7 @@ img {
 
 @media only screen and (min-width: 992px) {
   .nav-logo img {
-    height: 3rem;
+    height: 2.5rem;
   }
 
   .container {
@@ -143,76 +143,101 @@ img {
   }
 }
 
-@media only screen and (min-width: 992px) {
-  .nav-logo img {
-    height: 3rem;
-  }
-
-  .container {
-    max-width: 35rem;
-  }
-
-  .header h1 {
-    padding-right: 3.5em;
-    padding-left: 3.5em;
-  }
-  .header p {
-    padding-right: 3.5em;
-    padding-left: 3.5em;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
   .nav {
-    padding-left: 6rem;
-    padding-top: 3rem;
+    padding-left: 5vw;
+    padding-top: 5vh;
+  }
+
+  .nav img {
+    height: 3.5rem;
   }
 
   .landing-page {
     background-image: url(./images/bg-desktop.svg);
     background-size: cover;
-    /* background-position: calc(100% - 5px); */
   }
-
   .container {
-    max-width: 1800px;
+    padding: 0;
+    max-width: 90vw;
     display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 2.5rem;
+    grid-template-columns: 60% 40%;
   }
-
-  .landing-image {
-    padding: 2rem;
-    align-self: center;
-  }
-
   .header {
     text-align: start;
     align-self: flex-start;
-    margin-top: 2.5rem;
   }
+
   .header h1 {
     padding: 0;
-    padding-right: 4em;
-    font-size: 3em;
-    line-height: 1.2;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.8em;
+    margin-top: 1rem;
   }
+
+  .header p {
+    padding: 0;
+    font-size: 1.2em;
+  }
+  .footer {
+    font-size: 1.2em;
+    text-align: end;
+    bottom: 60px;
+    right: 10vw;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .nav {
+    padding-left: 5vw;
+    padding-top: 5vh;
+  }
+
+  .nav img {
+    height: 4rem;
+  }
+
+  .landing-image img {
+    padding-top: 10vh;
+    width: 95%;
+  }
+
+  .container {
+    grid-template-columns: 60% 40%;
+  }
+
+  .header {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    margin-top: 15vh;
+    padding-right: 5vw;
+  }
+
+  .header h1 {
+    padding: 0;
+
+    font-size: 3em;
+    line-height: 1.5;
+  }
+
   .header p {
     padding: 0;
     font-size: 1.5em;
-    padding-right: 7.5em;
     margin-top: 1.5rem;
   }
 
   .btn {
     margin-top: 1.5rem;
+    font-size: 1.2em;
   }
 
   .footer {
     font-size: 1.2em;
     text-align: end;
     bottom: 60px;
-    right: 200px;
+    right: 8vw;
   }
 }
 
